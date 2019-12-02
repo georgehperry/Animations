@@ -1,0 +1,625 @@
+.two-col {
+  display: flex;
+}
+
+.half {
+  width: 50%;
+}
+
+@keyframes fadeRight {
+  0% {
+    left: -50px;
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.35;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+body {
+  font-family: "Roboto";
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+h1 {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.portfolio-container {
+  display: flex;
+}
+.portfolio-container .portfolio-item {
+  width: 100%;
+}
+.portfolio-container .portfolio-item-container {
+  position: relative;
+  width: 33.33%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  height: 480px;
+  display: block;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  color: #fff;
+}
+.portfolio-container .portfolio-item-container-stagger {
+  position: relative;
+  width: 33.33%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  height: 220px;
+  display: block;
+  min-height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  color: #fff;
+}
+.portfolio-container .portfolio-item-0, .portfolio-container .portfolio-item-1, .portfolio-container .portfolio-item-2, .portfolio-container .portfolio-item-3, .portfolio-container .portfolio-item-4, .portfolio-container .portfolio-item-5 {
+  position: absolute;
+  height: 480px;
+  display: block;
+  min-height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-container .portfolio-item-1 {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-06/jen-o-neill-v-festival-2016-6-cbe-821-a-66-f-8-11-e-6-a-3-f-9-e-2-fa-661-e-35-e-8-original%403x.jpg?itok=C_sTnT5j");
+  top: -30px;
+  left: -30px;
+}
+.portfolio-container .portfolio-item-2 {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-11/img-6063-copy%402x_2.jpg?itok=Xc_z3Jum");
+  top: -30px;
+  left: 30px;
+}
+.portfolio-container .portfolio-item-3 {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-11/Scotss%20teaser.png?itok=7p8Tm-kI");
+  top: 30px;
+  left: -30px;
+}
+.portfolio-container .portfolio-item-4 {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-07/02_0.png?itok=X_-BM7RB");
+  top: 30px;
+}
+.portfolio-container .portfolio-item-5 {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2018-05/rcpch-case-study-thumb.jpg?itok=-4T6mWP5");
+  top: 30px;
+  left: 30px;
+}
+
+.people {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.person-0, .person-1, .person-2, .person-3, .person-4, .person-5, .person-a, .person-b, .person-c, .person-d, .person-e, .person-f, .person-a-css, .person-b-css, .person-c-css, .person-d-css, .person-e-css, .person-f-css {
+  height: 100%;
+  min-height: 345px;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.person-a-stagger, .person-b-stagger, .person-c-stagger, .person-d-stagger, .person-e-stagger, .person-f-stagger, .person-g-stagger, .person-h-stagger, .person-i-stagger {
+  height: 100%;
+  min-height: 220px;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.person-0, .person-a, .person-a-stagger, .person-g-stagger, .person-a-css {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/2017-07/img4668.png");
+}
+
+.person-1, .person-b, .person-b-stagger, .person-h-stagger, .person-b-css {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/2017-07/02Copy.png");
+}
+
+.person-2, .person-c, .person-c-stagger, .person-i-stagger, .person-c-css {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/2017-07/jenONeillVFestival20166Cbe821A66F811E6A3F9E2Fa661E35E8Original_0.png");
+}
+
+.person-3, .person-d, .person-d-stagger, .person-d-css {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/2019-04/Deanna_1.PNG");
+}
+
+.person-4, .person-e, .person-e-stagger, .person-e-css {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/2018-05/headshot-lisa.jpg");
+}
+
+.person-5, .person-f, .person-f-stagger, .person-f-css {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/2018-03/Jack.jpg");
+}
+
+.robot-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.robot-item-container {
+  min-height: 200px;
+  margin-bottom: 40px;
+}
+
+.robot-a, .robot-b, .robot-c, .robot-1, .robot-2, .robot-3 {
+  width: 125px;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+
+.robot-a, .robot-1 {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/2018-12/graphic-1.png");
+}
+
+.robot-b, .robot-2 {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/2018-12/graphic-2.png");
+}
+
+.robot-c, .robot-3 {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/2018-12/graphic-4.png");
+}
+
+.container {
+  display: flex;
+}
+
+.left-column, .right-column {
+  flex: 1;
+}
+
+.ndp-hero-js {
+  background: url("https://www.ndp-studio.com/sites/default/files/2017-11/bg-hero-desktop.gif") center center;
+  background-size: cover;
+  position: relative;
+  height: 740px;
+  min-height: 400px;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.ndp-hero-js h1 {
+  padding: 200px 0 170px 52px;
+  font-size: 100px;
+  max-width: 1000px;
+  position: relative;
+  top: 0;
+  left: 0;
+  font-style: italic;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  z-index: 2;
+}
+.ndp-hero-js .line-1, .ndp-hero-js .line-2, .ndp-hero-js .line-3, .ndp-hero-js .line-4 {
+  opacity: 0.2;
+}
+
+.componentContainer {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.blue-square {
+  width: 20px;
+  height: 20px;
+  background-color: #2E99FF;
+  margin-bottom: 8px;
+}
+
+.ndp-svg path {
+  margin-left: 50px;
+}
+
+/*
+  Animate content using 3 dimensions.
+  Parameters: Animation name, x distance, y distance, z distance, duration, delay, timing function (easing)
+  Example: @include slide-3d(slide-right,60px, 10px, 0px, 2000ms, 500ms, ease-in-out);
+  Example 2 : @include slide-3d(slide-right,60px, 10px, 0px, 2000ms, 500ms, ease-in-out);
+*/
+/*
+  Animate content using a zoom in/out feature (scale).
+  Parameters: Scale magnitude, duration, delay, timing function (easing)
+  Example: @include slide-3d(slide-right,60px, 10px, 0px, 2000ms, 500ms, ease-in-out);
+  Example 2 : @include slide-3d(slide-right,60px, 10px, 0px, 2000ms, 500ms, ease-in-out);
+*/
+.ndp-hero-css {
+  background: url("https://www.ndp-studio.com/sites/default/files/2017-11/bg-hero-desktop.gif") center center;
+  background-size: cover;
+  position: relative;
+  height: 740px;
+  min-height: 400px;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ndp-hero-heading {
+  padding: 200px 0 170px 52px;
+  font-size: 100px;
+  max-width: 1000px;
+  position: relative;
+  left: -60px;
+  top: -10px;
+  font-style: italic;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  z-index: 2;
+}
+
+.line-1-css, .line-2-css, .line-3-css, .line-4-css {
+  opacity: 0.2;
+}
+
+.line-1-css {
+  animation-name: slide-right;
+  animation-delay: 0s;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slide-right {
+  100% {
+    transform: translateX(50px) translateY(10px) translateZ(0px);
+    opacity: 1;
+  }
+}
+
+.line-2-css {
+  animation-name: slide-right;
+  animation-delay: 100ms;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slide-right {
+  100% {
+    transform: translateX(50px) translateY(10px) translateZ(0px);
+    opacity: 1;
+  }
+}
+
+.line-3-css {
+  animation-name: slide-right;
+  animation-delay: 200ms;
+  animation-duration: 700ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slide-right {
+  100% {
+    transform: translateX(50px) translateY(10px) translateZ(0px);
+    opacity: 1;
+  }
+}
+
+.line-4-css {
+  animation-name: slide-right;
+  animation-delay: 300ms;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slide-right {
+  100% {
+    transform: translateX(50px) translateY(10px) translateZ(0px);
+    opacity: 1;
+  }
+}
+
+.person-transition-down {
+  animation-name: person-transition-down;
+  animation-delay: 0s;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes person-transition-down {
+  100% {
+    transform: translateX(0px) translateY(50px) translateZ(0px);
+    opacity: 1;
+  }
+}
+
+.person-transition-a {
+  animation-name: person-transition-a;
+  animation-delay: 0s;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes person-transition-a {
+  100% {
+    transform: translateX(0px) translateY(50px) translateZ(0px);
+    opacity: 1;
+  }
+}
+
+.person-transition-b {
+  animation-name: person-transition-b;
+  animation-delay: 100ms;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes person-transition-b {
+  100% {
+    transform: translateX(0px) translateY(50px) translateZ(0px);
+    opacity: 1;
+  }
+}
+
+.person-transition-c {
+  animation-name: person-transition-c;
+  animation-delay: 200ms;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes person-transition-c {
+  100% {
+    transform: translateX(0px) translateY(50px) translateZ(0px);
+    opacity: 1;
+  }
+}
+
+.person-transition-d {
+  animation-name: person-transition-d;
+  animation-delay: 300ms;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes person-transition-d {
+  100% {
+    transform: translateX(0px) translateY(50px) translateZ(0px);
+    opacity: 1;
+  }
+}
+
+.person-transition-e {
+  animation-name: person-transition-e;
+  animation-delay: 400ms;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes person-transition-e {
+  100% {
+    transform: translateX(0px) translateY(50px) translateZ(0px);
+    opacity: 1;
+  }
+}
+
+.person-transition-f {
+  animation-name: person-transition-f;
+  animation-delay: 500ms;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes person-transition-f {
+  100% {
+    transform: translateX(0px) translateY(50px) translateZ(0px);
+    opacity: 1;
+  }
+}
+
+.portfolio-container-css {
+  display: flex;
+  margin-bottom: 40px;
+}
+.portfolio-container-css .portfolio-item {
+  width: 100%;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container {
+  position: relative;
+  width: 33.33%;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+  height: 480px;
+  display: block;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  color: #fff;
+  overflow: hidden;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-0-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-1-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-2-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-3-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-4-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-5-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-1-1-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-2-1-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-3-1-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-4-1-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-5-1-css {
+  position: absolute;
+  height: 480px;
+  display: block;
+  min-height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-0-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-1-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-2-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-3-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-4-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-5-css {
+  opacity: 0.2;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-1-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-1-1-css {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-06/jen-o-neill-v-festival-2016-6-cbe-821-a-66-f-8-11-e-6-a-3-f-9-e-2-fa-661-e-35-e-8-original%403x.jpg?itok=C_sTnT5j");
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-2-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-2-1-css {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-11/img-6063-copy%402x_2.jpg?itok=Xc_z3Jum");
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-3-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-3-1-css {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-11/Scotss%20teaser.png?itok=7p8Tm-kI");
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-4-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-4-1-css {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-07/02_0.png?itok=X_-BM7RB");
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-5-css, .portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-5-1-css {
+  background-image: url("https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2018-05/rcpch-case-study-thumb.jpg?itok=-4T6mWP5");
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-1-css {
+  top: -50px;
+  animation-name: portfolio-item-1;
+  animation-delay: 0s;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes portfolio-item-1 {
+  100% {
+    transform: translateX(0px) translateY(50px) translateZ(0px);
+    opacity: 1;
+  }
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-2-css {
+  top: -50px;
+  animation-name: portfolio-item-2;
+  animation-delay: 0s;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes portfolio-item-2 {
+  100% {
+    transform: translateX(0px) translateY(50px) translateZ(0px);
+    opacity: 1;
+  }
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-3-css {
+  top: -50px;
+  animation-name: portfolio-item-3;
+  animation-delay: 500ms;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes portfolio-item-3 {
+  100% {
+    transform: translateX(0px) translateY(50px) translateZ(0px);
+    opacity: 1;
+  }
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-4-css {
+  top: -50px;
+  animation-name: portfolio-item-4;
+  animation-delay: 500ms;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes portfolio-item-4 {
+  100% {
+    transform: translateX(0px) translateY(50px) translateZ(0px);
+    opacity: 1;
+  }
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-5-css {
+  top: -50px;
+  animation-name: portfolio-item-5;
+  animation-delay: 500ms;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes portfolio-item-5 {
+  100% {
+    transform: translateX(0px) translateY(50px) translateZ(0px);
+    opacity: 1;
+  }
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-1-1-css:hover {
+  transform: scale(1.1) translateX(0px) translateY(0px) translateZ(0px);
+  transition-duration: 1000ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-2-1-css:hover {
+  transform: scale(1.1) translateX(0px) translateY(0px) translateZ(0px);
+  transition-duration: 1000ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-3-1-css:hover {
+  transform: scale(1.1) translateX(0px) translateY(0px) translateZ(0px);
+  transition-duration: 1000ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-4-1-css:hover {
+  transform: scale(1.1) translateX(0px) translateY(0px) translateZ(0px);
+  transition-duration: 1000ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-5-1-css:hover {
+  transform: scale(1.1) translateX(0px) translateY(0px) translateZ(0px);
+  transition-duration: 1000ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-1-1-css {
+  transform: scale(1) translateX(0px) translateY(0px) translateZ(0px);
+  transition-duration: 1000ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-2-1-css {
+  transform: scale(1) translateX(0px) translateY(0px) translateZ(0px);
+  transition-duration: 1000ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-3-1-css {
+  transform: scale(1) translateX(0px) translateY(0px) translateZ(0px);
+  transition-duration: 1000ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-4-1-css {
+  transform: scale(1) translateX(0px) translateY(0px) translateZ(0px);
+  transition-duration: 1000ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+.portfolio-container-css .portfolio-item .portfolio-item-container .portfolio-item-5-1-css {
+  transform: scale(1) translateX(0px) translateY(0px) translateZ(0px);
+  transition-duration: 1000ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+/*# sourceMappingURL=main.css.map */

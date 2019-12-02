@@ -1,0 +1,228 @@
+
+//Use this ting - https://codepen.io/toctan/pen/uJKin
+
+/*
+  Animate content using 3 dimensions.
+  Parameters: Animation name, x distance, y distance, z distance, duration, delay, timing function (easing)
+  Example: @include slide-3d(slide-right,60px, 10px, 0px, 2000ms, 500ms, ease-in-out);
+  Example 2 : @include slide-3d(slide-right,60px, 10px, 0px, 2000ms, 500ms, ease-in-out);
+*/
+@mixin slide-3d($animation-name, $x: 0px, $y: 0px, $z: 0px, $duration: 800ms, $delay: 0s, $easing: ease-in-out) {
+  @keyframes #{$animation-name} {
+    0% {}
+    100% {
+      transform: translateX($x) translateY($y) translateZ($z);
+      opacity: 1;
+    }
+  }
+
+  animation-name: $animation-name;
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-timing-function: $easing;
+  animation-fill-mode: forwards;
+}
+
+/*
+  Animate content using a zoom in/out feature (scale).
+  Parameters: Scale magnitude, duration, delay, timing function (easing)
+  Example: @include slide-3d(slide-right,60px, 10px, 0px, 2000ms, 500ms, ease-in-out);
+  Example 2 : @include slide-3d(slide-right,60px, 10px, 0px, 2000ms, 500ms, ease-in-out);
+*/
+@mixin zoom($scale: 1.2, $x: 0px, $y: 0px, $z: 0px, $duration: 1000ms, $delay: 0s, $easing: ease-in-out) {
+  transform: scale($scale) translateX($x) translateY($y) translateZ($z);
+  transition-duration: $duration;
+  transition-delay: $delay;
+  transition-timing-function: $easing;
+}
+
+.ndp-hero-css {
+  background: url('https://www.ndp-studio.com/sites/default/files/2017-11/bg-hero-desktop.gif') center center;
+  background-size: cover;
+  position: relative;
+  height: 740px;
+  min-height: 400px;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.ndp-hero-heading {
+    padding: 200px 0 170px 52px;
+    font-size: 100px;
+    max-width: 1000px;
+    position: relative;
+    left: -60px;
+    top: -10px;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    z-index: 2;
+}
+
+.line-1-css, .line-2-css, .line-3-css, .line-4-css {
+  opacity: 0.2;
+}
+
+.line-1-css {
+  @include slide-3d(slide-right, $x: 50px, $y: 10px, $duration: 500ms);
+}
+.line-2-css {
+  @include slide-3d(slide-right, $x: 50px, $y: 10px, $duration: 600ms, $delay: 100ms);
+}
+.line-3-css {
+  @include slide-3d(slide-right, $x: 50px, $y: 10px, $duration:700ms, $delay: 200ms);
+}
+.line-4-css {
+  @include slide-3d(slide-right, $x: 50px, $y: 10px, $duration: 800ms, $delay: 300ms);
+}
+
+//Person styling
+
+//Person variables
+$person-y-distance: 50px;
+$portfolio-duration: 1000ms;
+
+//Person items Example 1 --------------------------------------------------->
+.person-transition-down {
+  @include slide-3d(person-transition-down, $y: $person-y-distance, $easing: linear);
+}
+
+//Person items Individual transitions --------------------------------------------------->
+.person-transition-a {
+  @include slide-3d(person-transition-a, $y: $person-y-distance, $easing: linear);
+}
+.person-transition-b {
+  @include slide-3d(person-transition-b, $y: $person-y-distance, $delay: 100ms, $easing: linear);
+}
+.person-transition-c {
+  @include slide-3d(person-transition-c, $y: $person-y-distance, $delay: 200ms, $easing: linear);
+}
+.person-transition-d {
+  @include slide-3d(person-transition-d, $y: $person-y-distance, $delay: 300ms, $easing: linear);
+}
+.person-transition-e {
+  @include slide-3d(person-transition-e, $y: $person-y-distance, $delay: 400ms, $easing: linear);
+}
+.person-transition-f {
+  @include slide-3d(person-transition-f, $y: $person-y-distance, $delay: 500ms, $easing: linear);
+}
+
+//Portfolio styling
+.portfolio-container-css {
+  display: flex;
+  margin-bottom: 40px;
+
+  .portfolio-item {
+    width: 100%;
+
+    .portfolio-item-container {
+      position: relative;
+      width: 33.33%;
+      padding-left: 0;
+      padding-right: 0;
+      float: left;
+      height: 480px;
+      display: block;
+      min-height: 300px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding:0;
+      color: #fff;
+      overflow: hidden;
+
+      $portfolio-x-distance: 10px;
+      $portfolio-y-distance: 50px;
+      $portfolio-duration: 1000ms;
+      .portfolio-item-0-css, .portfolio-item-1-css, .portfolio-item-2-css, .portfolio-item-3-css, .portfolio-item-4-css, .portfolio-item-5-css, .portfolio-item-1-1-css, .portfolio-item-2-1-css, .portfolio-item-3-1-css, .portfolio-item-4-1-css, .portfolio-item-5-1-css {
+        position: absolute;
+        height: 480px;
+        display: block;
+        min-height: 300px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .portfolio-item-0-css, .portfolio-item-1-css, .portfolio-item-2-css, .portfolio-item-3-css, .portfolio-item-4-css, .portfolio-item-5-css {
+        opacity: 0.2;
+      }
+      //Portfolio background images
+      .portfolio-item-1-css, .portfolio-item-1-1-css {
+        background-image: url('https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-06/jen-o-neill-v-festival-2016-6-cbe-821-a-66-f-8-11-e-6-a-3-f-9-e-2-fa-661-e-35-e-8-original%403x.jpg?itok=C_sTnT5j');
+      }
+      .portfolio-item-2-css, .portfolio-item-2-1-css {
+        background-image: url('https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-11/img-6063-copy%402x_2.jpg?itok=Xc_z3Jum');
+      }
+      .portfolio-item-3-css, .portfolio-item-3-1-css {
+        background-image: url('https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-11/Scotss%20teaser.png?itok=7p8Tm-kI');
+      }
+      .portfolio-item-4-css, .portfolio-item-4-1-css {
+        background-image: url('https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-07/02_0.png?itok=X_-BM7RB');
+      }
+      .portfolio-item-5-css, .portfolio-item-5-1-css {
+        background-image: url('https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2018-05/rcpch-case-study-thumb.jpg?itok=-4T6mWP5');
+      }
+
+      //Portfolio items Example 1 --------------------------------------------------->
+      .portfolio-item-1-css {
+        top: -$portfolio-y-distance;
+        @include slide-3d(portfolio-item-1, $y: $portfolio-y-distance, $duration: $portfolio-duration, $easing: ease-out);
+      }
+      .portfolio-item-2-css {
+        top: -$portfolio-y-distance;
+        @include slide-3d(portfolio-item-2, $y: $portfolio-y-distance, $duration: $portfolio-duration, $easing: ease-out);
+      }
+      .portfolio-item-3-css {
+        top: -$portfolio-y-distance;
+        @include slide-3d(portfolio-item-3, $y: $portfolio-y-distance, $delay: 500ms, $duration: $portfolio-duration, $easing: ease-out);
+      }
+      .portfolio-item-4-css {
+        top: -$portfolio-y-distance;
+        @include slide-3d(portfolio-item-4, $y: $portfolio-y-distance, $delay: 500ms, $duration: $portfolio-duration, $easing: ease-out);
+      }
+      .portfolio-item-5-css {
+        top: -$portfolio-y-distance;
+        @include slide-3d(portfolio-item-5, $y: $portfolio-y-distance, $delay: 500ms, $duration: $portfolio-duration, $easing: ease-out);
+      }
+
+
+      //Portfolio items Example 2 On hover --------------------------------------------------->
+      .portfolio-item-1-1-css:hover {
+        @include zoom($scale:1.1);
+      }
+      .portfolio-item-2-1-css:hover {
+        @include zoom($scale:1.1);
+      }
+      .portfolio-item-3-1-css:hover {
+        @include zoom($scale:1.1);
+      }
+      .portfolio-item-4-1-css:hover {
+        @include zoom($scale:1.1);
+      }
+      .portfolio-item-5-1-css:hover {
+        @include zoom($scale:1.1);
+      }
+
+      //Portfolio items Example 2 When hover removed --------------------------------------------------->
+      .portfolio-item-1-1-css {
+        @include zoom($scale:1);
+      }
+      .portfolio-item-2-1-css {
+        @include zoom($scale:1);
+      }
+      .portfolio-item-3-1-css {
+        @include zoom($scale:1);
+      }
+      .portfolio-item-4-1-css {
+        @include zoom($scale:1);
+      }
+      .portfolio-item-5-1-css {
+        @include zoom($scale:1);
+      }
+    }
+  }
+}

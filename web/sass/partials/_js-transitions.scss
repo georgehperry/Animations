@@ -1,0 +1,227 @@
+$xDistance: 30px;
+$yDistance: 30px;
+
+@keyframes fadeRight {
+  0% {left: -50px; opacity: 0.2;}
+  50% {opacity: 0.35;}
+  100% {left: 0; opacity: 1;}
+}
+
+
+body {
+font-family: 'Roboto';
+margin:0;
+overflow-x: hidden;
+}
+.hide {
+  visibility: hidden;
+}
+h1 {
+  margin:0;
+  letter-spacing: 1px;
+}
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+.portfolio-container {
+  display: flex;
+
+  .portfolio-item {
+    width:100%;
+  }
+  .portfolio-item-container {
+    position: relative;
+    width: 33.33%;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    height: 480px;
+    display: block;
+    min-height: 300px;
+    // width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:0;
+    color: #fff;
+  }
+  .portfolio-item-container-stagger {
+    position: relative;
+    width: 33.33%;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    height: 220px;
+    display: block;
+    min-height: 220px;
+    // width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:0;
+    color: #fff;
+  }
+
+  .portfolio-item-0, .portfolio-item-1, .portfolio-item-2, .portfolio-item-3, .portfolio-item-4, .portfolio-item-5 {
+    position: absolute;
+    height: 480px;
+    display: block;
+    min-height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .portfolio-item-1 {
+    background-image: url('https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-06/jen-o-neill-v-festival-2016-6-cbe-821-a-66-f-8-11-e-6-a-3-f-9-e-2-fa-661-e-35-e-8-original%403x.jpg?itok=C_sTnT5j');
+    top: -$yDistance;
+    left: -$xDistance;
+  }
+  .portfolio-item-2 {
+    background-image: url('https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-11/img-6063-copy%402x_2.jpg?itok=Xc_z3Jum');
+    top: -$yDistance;
+    left: $xDistance;
+  }
+  .portfolio-item-3 {
+    background-image: url('https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-11/Scotss%20teaser.png?itok=7p8Tm-kI');
+    top: $yDistance;
+    left: -$xDistance;
+  }
+  .portfolio-item-4 {
+    background-image: url('https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2017-07/02_0.png?itok=X_-BM7RB');
+    top: $yDistance;
+  }
+  .portfolio-item-5 {
+    background-image: url('https://www.ndp-studio.com/sites/default/files/styles/portfolio_list/public/2018-05/rcpch-case-study-thumb.jpg?itok=-4T6mWP5');
+    top: $yDistance;
+    left: $xDistance;
+  }
+}
+
+.people {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+.person-0, .person-1, .person-2, .person-3, .person-4, .person-5, .person-a, .person-b, .person-c, .person-d, .person-e, .person-f, .person-a-css, .person-b-css, .person-c-css, .person-d-css, .person-e-css, .person-f-css {
+  height: 100%;
+  min-height: 345px;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+}
+.person-a-stagger, .person-b-stagger, .person-c-stagger, .person-d-stagger, .person-e-stagger, .person-f-stagger, .person-g-stagger, .person-h-stagger, .person-i-stagger {
+  height: 100%;
+  min-height: 220px;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+}
+.person-0, .person-a, .person-a-stagger, .person-g-stagger, .person-a-css {
+  background-image: url('https://www.ndp-studio.com/sites/default/files/2017-07/img4668.png');
+}
+.person-1, .person-b, .person-b-stagger, .person-h-stagger, .person-b-css {
+  background-image: url('https://www.ndp-studio.com/sites/default/files/2017-07/02Copy.png');
+}
+.person-2, .person-c, .person-c-stagger, .person-i-stagger, .person-c-css {
+  background-image: url('https://www.ndp-studio.com/sites/default/files/2017-07/jenONeillVFestival20166Cbe821A66F811E6A3F9E2Fa661E35E8Original_0.png');
+}
+.person-3, .person-d, .person-d-stagger, .person-d-css {
+  background-image: url('https://www.ndp-studio.com/sites/default/files/2019-04/Deanna_1.PNG');
+}
+.person-4, .person-e, .person-e-stagger, .person-e-css {
+  background-image: url('https://www.ndp-studio.com/sites/default/files/2018-05/headshot-lisa.jpg');
+}
+.person-5, .person-f, .person-f-stagger, .person-f-css {
+  background-image: url('https://www.ndp-studio.com/sites/default/files/2018-03/Jack.jpg');
+}
+
+.stagger-grid {
+  //  transform: scale(0.7);
+}
+
+.robot-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+.robot-item-container {
+  min-height: 200px;
+  margin-bottom: 40px;
+}
+.robot-a, .robot-b, .robot-c, .robot-1, .robot-2, .robot-3 {
+  width: 125px;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+.robot-a, .robot-1 {
+  background-image: url('https://www.ndp-studio.com/sites/default/files/2018-12/graphic-1.png');
+}
+.robot-b, .robot-2 {
+  background-image: url('https://www.ndp-studio.com/sites/default/files/2018-12/graphic-2.png');
+}
+.robot-c, .robot-3 {
+  background-image: url('https://www.ndp-studio.com/sites/default/files/2018-12/graphic-4.png');
+}
+
+.container {
+  display: flex;
+}
+.left-column, .right-column {
+  flex: 1;
+}
+
+.ndp-hero-js {
+  background: url('https://www.ndp-studio.com/sites/default/files/2017-11/bg-hero-desktop.gif') center center;
+  background-size: cover;
+  position: relative;
+  height: 740px;
+  min-height: 400px;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+
+  h1 {
+    padding: 200px 0 170px 52px;
+    font-size: 100px;
+    max-width: 1000px;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    z-index: 2;
+  }
+  .line-1, .line-2, .line-3, .line-4 {
+    opacity: 0.2;
+  }
+}
+
+.componentContainer {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.blue-square {
+    width: 20px;
+    height: 20px;
+    background-color: #2E99FF;
+    margin-bottom: 8px;
+}
+
+.ndp-svg {
+  path {
+    margin-left: 50px;
+  }
+}
