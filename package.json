@@ -1,0 +1,17 @@
+{
+  "name": "anime-js",
+  "version": "1.0.0",
+  "description": "Anime JS animations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "George Perry",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.1.0",
+    "node-sass": "^4.12.0",
+    "sass": "^1.22.10"
+  }
+}
