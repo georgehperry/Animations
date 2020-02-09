@@ -14,7 +14,7 @@
       transform: translateX($x) translateY($y) translateZ($z);
       opacity: 1;
     }
-  } 
+  }
 
   animation-name: $animation-name;
   animation-delay: $delay;
