@@ -1,4 +1,35 @@
 
+/* On element being visible, add class to isElementInViewport   */
+function elementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document. documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document. documentElement.clientWidth)
+  );
+}
+
+function testInViewport() {
+  let ele = document.getElementById('test');
+  if (elementInViewport(ele)) {
+    ele.classList.add('smol');
+    unbindScrollEventHandler();
+  }
+}
+
+function unbindScrollEventHandler() {
+	$(document).unbind('scroll', testInViewport);
+}
+
+$(document).scroll(testInViewport);
+
+
+
+
+
+
+/* Anime js */
 const dur = 2200;
 const distance = 270;
 

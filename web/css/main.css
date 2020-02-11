@@ -1,9 +1,23 @@
+h2 {
+  font-size: 50px;
+  margin-top: 100px;
+  margin-left: 10%;
+}
+
 .two-col {
   display: flex;
 }
 
 .half {
   width: 50%;
+}
+
+.smol {
+  width: 20%;
+}
+
+.padding-top--medium {
+  padding-top: 40px;
 }
 
 @keyframes fadeRight {
@@ -34,10 +48,12 @@ h1 {
   letter-spacing: 1px;
 }
 
+.js-transitions {
+  margin-bottom: 1000px;
+}
+
 .container {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10%;
   margin-top: 60px;
 }
 
@@ -227,7 +243,8 @@ h1 {
   opacity: 0.2;
 }
 
-.componentContainer {
+.letterComponentContainer {
+  margin-left: 10%;
   margin-bottom: 50px;
   width: 100%;
 }
